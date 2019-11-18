@@ -20,15 +20,15 @@
                 <td>{{ stock.size }}</td>
             </tr>
             <tr>
-                <th>Quantity</th>
+                <th>Quantité</th>
                 <td>{{ stock.quantity }}</td>
             </tr>
         </tbody>
     </table>
 
-    <a href="{{ path('stock_index') }}">back to list</a>
+    <a href="{{ path('stock_index') }}">Retour à la liste</a>
 
-    <a href="{{ path('stock_edit', {'id': stock.id}) }}">edit</a>
+    <a href="{{ path('stock_edit', {'id': stock.id}) }}">Modifier</a>
 
     {{ include('stock/_delete_form.html.twig') }}
 {% endblock %}

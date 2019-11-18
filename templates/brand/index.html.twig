@@ -1,15 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Brand index{% endblock %}
+{% block title %}Gestion des marques{% endblock %}
 
 {% block body %}
-    <h1>Brand index</h1>
+    <h1>Gestion des Marques</h1>
 
     <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Name</th>
+                <th>Nom</th>
                 <th>Logo</th>
                 <th>actions</th>
             </tr>
@@ -21,8 +21,8 @@
                 <td>{{ brand.name }}</td>
                 <td>{{ brand.logo }}</td>
                 <td>
-                    <a href="{{ path('brand_show', {'id': brand.id}) }}">show</a>
-                    <a href="{{ path('brand_edit', {'id': brand.id}) }}">edit</a>
+                    <a href="{{ path('brand_show', {'id': brand.id}) }}">Visualiser</a>
+                    <a href="{{ path('brand_edit', {'id': brand.id}) }}">Modifier</a>
                 </td>
             </tr>
         {% else %}
@@ -33,5 +33,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('brand_new') }}">Create new</a>
+    <a href="{{ path('brand_new') }}">Ajouter une marque</a>
 {% endblock %}

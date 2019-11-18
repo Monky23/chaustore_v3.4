@@ -1,15 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Color index{% endblock %}
+{% block title %}Gestion des couleurs{% endblock %}
 
 {% block body %}
-    <h1>Color index</h1>
+    <h1>Gestion des couleurs</h1>
 
     <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Name</th>
+                <th>Nom</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -19,8 +19,8 @@
                 <td>{{ color.id }}</td>
                 <td>{{ color.name }}</td>
                 <td>
-                    <a href="{{ path('color_show', {'id': color.id}) }}">show</a>
-                    <a href="{{ path('color_edit', {'id': color.id}) }}">edit</a>
+                    <a href="{{ path('color_show', {'id': color.id}) }}">Voir</a>
+                    <a href="{{ path('color_edit', {'id': color.id}) }}">Modifier</a>
                 </td>
             </tr>
         {% else %}
@@ -31,5 +31,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('color_new') }}">Create new</a>
+    <a href="{{ path('color_new') }}">ajouter une nouvelle couleur</a>
 {% endblock %}

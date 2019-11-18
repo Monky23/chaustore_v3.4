@@ -1,13 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit Brand{% endblock %}
+{% block title %}Modification de marques{% endblock %}
 
 {% block body %}
-    <h1>Edit Brand</h1>
+    <h1>Modifier une marque</h1>
 
-    {{ include('brand/_form.html.twig', {'button_label': 'Update'}) }}
+    {{ include('brand/_form.html.twig', {'button_label': 'Modifier'}) }}
 
-    <a href="{{ path('brand_index') }}">back to list</a>
+    <a href="{{ path('brand_index') }}">Retour à la liste</a>
 
     {{ include('brand/_delete_form.html.twig') }}
 {% endblock %}
