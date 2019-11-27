@@ -3,6 +3,14 @@
 {% block title %}Gestion des catégories{% endblock %}
 
 {% block body %}
+    <nav>
+        <a href="{{path('product_index')}}">Produits</a>
+        <a href="{{path('brand_index')}}">Marques</a>
+        <a href="{{path('category_index')}}">Categories</a>
+        <a href="{{path('color_index')}}">Couleurs</a>
+        <a href="{{path('size_index')}}">Pointures</a>
+        <a href="{{path('stock_index')}}">Stocks</a>
+    </nav>
     <h1>Gestion des catégories</h1>
 
     <table class="table">

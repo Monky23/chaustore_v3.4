@@ -1,9 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Product{% endblock %}
+{% block title %}Visualisation de produits{% endblock %}
 
 {% block body %}
-    <h1>Product</h1>
+    <nav>
+        <a href="{{path('product_index')}}">Produits</a>
+        <a href="{{path('brand_index')}}">Marques</a>
+        <a href="{{path('category_index')}}">Categories</a>
+        <a href="{{path('color_index')}}">Couleurs</a>
+        <a href="{{path('size_index')}}">Pointures</a>
+        <a href="{{path('stock_index')}}">Stocks</a>
+    </nav>
+    <h1>Visualisation de produits</h1>
 
     <table class="table">
         <tbody>
