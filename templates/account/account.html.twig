@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block title %}Account{% endblock %}
+{% block body %}
+    {% if app.user %}
+        <a href="{{ path('app_logout') }}">Logout</a>
+        <div class="mb-3">
+            You are logged in as {{ app.user.name }}, 
+        </div>
+        <div class="mb-3">
+            Your name is {{ app.user.firstname }}
+        </div>
+        <div class="mb-3">
+            Your email is {{ app.user.email }}       
+        </div>
+    {% endif %}
+
+{% endblock %}
